@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: quay.io/nuri_cetin/demo-python-app:1.0.1-3bf703f
+          image: quay.io/nuri_cetin/demo-python-app:1.0.2-d2ac048
           ports:
           - containerPort: 8080
           env:
           - name: APP_VERSION
-            value: "1.0.1-3bf703f"
+            value: "1.0.2-d2ac048"
           livenessProbe:
             httpGet:
               path: /health
